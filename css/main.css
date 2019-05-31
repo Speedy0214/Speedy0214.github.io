@@ -42,7 +42,7 @@ ul.posts li {
     list-style: none;
 }
 
-img[alt="VenndiagramRL"] {
+img {
   max-width:  20px;
   max-heigth:  20px;
   display: block;
