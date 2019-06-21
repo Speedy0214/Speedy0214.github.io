@@ -11,7 +11,7 @@ date: 2019-06-20
 ### Exercise  
 
 >1.You have dataset:
-
+>>>
   $X_0$|$X_1$|$X_2$|$Y$
   ---|--|--|--
   a|e|h|0
