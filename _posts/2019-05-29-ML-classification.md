@@ -11,7 +11,6 @@ date: 2019-06-20
 ### Exercise  
 
 >1.You have dataset:
-<div align = 'center'>
 
   $X_0$|$X_1$|$X_2$|$Y$
   ---|--|--|--
@@ -26,7 +25,6 @@ date: 2019-06-20
   b|e|g|0
   b|e|g|1
 
-</div>
 >when $X=$(a, f, g), $Y=?$
 
 
