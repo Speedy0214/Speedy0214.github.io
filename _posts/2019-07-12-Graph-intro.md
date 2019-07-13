@@ -14,11 +14,11 @@ The vertices $x$ and $y$ of an edage {$x, y$} are called the *endpoint*. The edg
 
 A multigraph is generalization that allows multiple edges adjacent to the same pair of vertices, In some texts, multigraphs are simple called graphs.
 
-Sometimes, graphs are allowed to contain loops, which are edges that join a vertex to itself. For allowing loops, the above definition must be changed by defining edges as multisets of two vertices instead of two-set.
+Sometimes, graphs are allowed to contain loops, which are edges that join a vertex to itself. For allowing loops, the above definition must be changed by defining edges as multisets of two vertices instead of two-set.  
 
-The *order* of a graph is its number of vertices $|V|$. The *size* of a graph is its number of edages $|E|$. However, in some context, such that for expressing the computational complexity of algorithms, the size of $|V|+|E|$. The *degree* or *valency* of a vertex is the number of edages that are incident to it; for graphs with loops, a loop is counted twice.
+The *order* of a graph is its number of vertices $|V|$. The *size* of a graph is its number of edages $|E|$. However, in some context, such that for expressing the computational complexity of algorithms, the size of $|V|+|E|$. The *degree* or *valency* of a vertex is the number of edages that are incident to it; for graphs with loops, a loop is counted twice.  
 
-In a graph of order $n$, the maximum degree of each vertex is n − 1 (or n + 1 if loops are allowed), and the maximum number of edges is $n(n − 1)/2$ (or $n(n + 1)/2$ if loops are allowed).
+In a graph of order $n$, the maximum degree of each vertex is n − 1 (or n + 1 if loops are allowed), and the maximum number of edges is $n(n − 1)/2$ (or $n(n + 1)/2$ if loops are allowed).  
 
 The edges of a graph define a symmetric relation on the vertices, called the adjacency relation. Specifically, two vertices x and y are adjacent if {$x, y$} is an edge.
 
