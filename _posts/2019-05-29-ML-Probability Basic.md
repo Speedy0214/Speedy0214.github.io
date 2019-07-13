@@ -36,6 +36,11 @@ $$A_{ij} = \sum_{n=1}^{N}(x_n)^{i+j}, Y_i = \sum_{n=1}^{N}(x_n)^iy_n$$
 
 
 
+---
+
+## Bayesian probabilities
+
+
 
 
 
