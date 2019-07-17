@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "DATA ABSTRACTION"
+title: "abstract data type(ADT)"
 categories: [Algorithm]
 date: 2019-07-17
 ---
 
 ### ADT(abstract data type)
->> a DATA TYPE is a set of values and a set of operations on those values.
->> an *abstract data type* is a data type whose representation is hidden from the client. When using an ADT, we focus on the operations specified in the API and pay no attention to the data representation; when *implementing* an ADT, we focus on the data, then implement operations on that data.
+> a DATA TYPE is a set of values and a set of operations on those values.
+> an *abstract data type* is a data type whose representation is hidden from the client. When using an ADT, we focus on the operations specified in the API and pay no attention to the data representation; when *implementing* an ADT, we focus on the data, then implement operations on that data.
 
->> Abstract data type are important because they support encapsulation in program design.
+> Abstract data type are important because they support encapsulation in program design.
 >> - Precisely specify problems in the form of APIs for use by diverse clients
->> - Describe algorithms and data structures as API implementations
+> - Describe algorithms and data structures as API implementations
 
 **Using abstract data types.**  we begin by describing how to write programs that use a simple data type named Counter whose values are a name and a nonnegative integer and whose operations are create and initialize to zero, increment by one, and examine the current value.To use a Counter, you need to learn our mechanism for specifying the operations defined in the data type and the Java language mechanisms for creating and manipulating data-type values  
 >> **APIforanabstractdatatype.** To specify the behavior of an ADT, we use *(API)*, which is a list of *constructors* and *instance methods*, description in this API for Counter:  
@@ -31,7 +31,7 @@ public class Counter
 
 
 ### Bags, Queues, and Stacks
-![BAGS, QUEUES, AND STACKS](Algorithm/Algorithm_bag_queue_stack.jpg)
+![BAGS, QUEUES, AND STACKS](/assets/Algorithm/Algorithm_bag_queue_stack.jpg)
 
 
 
