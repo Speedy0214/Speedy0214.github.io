@@ -2,7 +2,7 @@
 layout: post
 title: "DATA ABSTRACTION"
 categories: [Algorithm]
-date: 2019-07
+date: 2019-07-17
 ---
 
 ### ADT(abstract data type)
@@ -23,6 +23,7 @@ public class Counter
      int tally()             // number of increment since creation
   String toString()          // string representation
 ```
+
 
 
 
