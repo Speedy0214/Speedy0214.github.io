@@ -21,6 +21,13 @@ date: 2019-07-16
 
 >> **Inherited methods.** Various Java conventions enable a data type to take advantage of builtin language mechanisms by including specific methods in the API. For example, all Java data types inherit a toString() method that returns a String representation of the datatype values. Java calls this method when any data-type value is to be concatenated with a String value with the + operator
 
+>> **Pass by value and pass by reference.**
+
+**implementing an ADT**
+>> **Instance variables**
+>> **Constructors**
+>> ![Counter implement](/assets/Algorithm/Counter.jpg)
+[Counter](/assets/code/Algorithm/Counter.java)
 
 
 ### Bags, Queues, and Stacks
