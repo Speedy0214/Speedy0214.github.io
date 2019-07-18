@@ -37,6 +37,11 @@ date: 2019-07-16
 
 >>![An abstract data type for a simple counter](/assets/Algorithm/An abstract data type for a simple counter.jpg)
 
+
+**Accumulator**  
+>>![Accumulator](/assets/Algorithm/Accumulator.png)
+
+
 ### Bags, Queues, and Stacks
 ![BAGS, QUEUES, AND STACKS](/assets/Algorithm/Algorithm_bag_queue_stack.jpg)
 
