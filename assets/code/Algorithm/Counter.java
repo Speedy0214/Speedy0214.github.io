@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdOut;
 public class Counter
 {
     private final String name;
@@ -14,7 +15,7 @@ public class Counter
 
     public void increment()
     { 
-        System.out.println(n1);
+        StdOut.println(n1);
         count++; 
     }
 

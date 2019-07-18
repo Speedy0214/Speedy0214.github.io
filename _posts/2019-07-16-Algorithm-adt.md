@@ -30,6 +30,13 @@ date: 2019-07-16
 [Counter](/assets/code/Algorithm/Counter.java)
 
 
+### API, clients, and implementations
+>- Specify an API. The purpose of the API is to separate clients from implementa- tions, to enable modular programming. We have two goals when specifying an API. First, we want to enable clear and correct client code. Indeed, it is a good idea to write some client code before finalizing the API to gain confidence that the specified data-type operations are the ones that clients need. Second, we want to be able to implement the operations. There is no point specifying opera- tions that we have no idea how to implement.
+> - Implement a Java class that meets the API specifications. First we choose the instance variables, then we write constructors and the instance methods.
+>- Develop multiple test clients, to validate the design decisions made in the first two steps.
+
+>>![An abstract data type for a simple counter](/assets/Algorithm/An abstract data type for a simple counter.jpg)
+
 ### Bags, Queues, and Stacks
 ![BAGS, QUEUES, AND STACKS](/assets/Algorithm/Algorithm_bag_queue_stack.jpg)
 
