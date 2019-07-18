@@ -42,30 +42,25 @@ date: 2019-07-16
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+---
 <h2>Reference</h2>
 
 <small>[Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-
----
-
-<h2>Reference</h2>
-
-<small>[wiki/Graph_(discrete_mathematics)](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics))</small>
