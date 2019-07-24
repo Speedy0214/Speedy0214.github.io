@@ -5,10 +5,12 @@ categories: [Algorithm]
 date: 2019-07-22
 ---
 
+#####Lecture 1: UnionFind  
 
-##### Lecture 1: UnionFind  
-#####Lecture 2: AnalysisOfAlgorithms
+#####Lecture 2: AnalysisOfAlgorithms  
+
 #####Lecture 3: StacksAndQueues  
+
 >>Queue: resizing-array implementation
 
 
