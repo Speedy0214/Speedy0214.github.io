@@ -47,3 +47,7 @@ img {
   max-heigth:  600px;
   display: block;
 }
+
+.mjx-chtml {
+    line-height: 0.8em
+}
