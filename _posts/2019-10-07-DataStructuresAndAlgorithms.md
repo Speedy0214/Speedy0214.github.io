@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " Data Structures and Algorithms"
+title: " Divid and Conquer —— Recurrence Relation examples"
 categories: [ Data Structures and Algorithms ]
 date: 2019-10-07
 ---
@@ -20,8 +20,11 @@ b. $$ T(n) = 2*T(n/2) + O(1) ; base case T(3) = O(3), T(2)=O(1) $$
 >> solution  
 $$T(n) + 2 = 2*(T(n/2) + 2) $$
 if only T(2) in base cases:
-$$  T(n) + 2 = 2^{log(n) - 1}*(T(2) + 2) $$
-$$  T(n) = 3n/2 -2 $$
+>>> $$  T(n) + 2 = 2^{log(n) - 1}*(T(2) + 2) $$
+>>> $$  T(n) = 3n/2 -2 $$
+if only T(3) in base cases:
+>>> $$  T(n) + 2 = 3^{log(n) - 1}*(T(3) + 2) $$
+>>> $$  T(n) = 5n/2 -2 $$
 
 
 
