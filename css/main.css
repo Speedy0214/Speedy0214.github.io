@@ -1,6 +1,11 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: lightgrey;
+    color: #216b2c;
+    font-family: monospace;
+
+
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -14,13 +19,13 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: darkgray;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
@@ -52,4 +57,12 @@ img {
 .note {
   font-weight:200;
 
+}
+
+blockquote {
+  background-color:#f0f0f0a6;
+
+}
+.MJXp-math {
+    font-family: monospace;
 }
