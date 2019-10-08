@@ -4,8 +4,6 @@ body {
     background-color: lightgrey;
     color: #216b2c;
     font-family: monospace;
-
-
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -68,13 +66,18 @@ blockquote {
 }
 .MJXp-math {
     font-family: monospace;
+    font-size:1.3em;
 }
 .MJXp-mi {
     font-family: monospace;
+    font-size:1.3em;
+
 }
 
 .MJXp-mo {
     font-family: monospace;
+    font-size:1.3em;
+    
 }
 
 
