@@ -15,6 +15,10 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
+.post {
+    background-color: #d1dad3;
+}
 a {
     text-decoration: underline;
     color:#206b2b;
@@ -25,9 +29,16 @@ a:hover {
 }
 }
 h1 {
-    font-size: 1.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.6em;
 }
+h2 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
 p {
     color: #00610ee0;
 }
