@@ -81,6 +81,29 @@ blockquote {
 }
 
 
+.MJXp-msubsup {
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+
+.MJXp-msubsup {
+    font-family: monospace;
+    font-size: 1.1em;
+}
+.MJXp-mrow {
+  font-family: monospace;
+    font-size: 1.1em;
+}
+
+.MJXp-mrow .MJXp-script {
+   font-family: monospace;
+   font-size: 5em;
+   vertical-align: -0.2em;
+}
+
+
+
 span {
     font-family: monospace!important; 
 }
