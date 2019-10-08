@@ -18,11 +18,13 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
-    color: darkgray;
+    text-decoration: underline;
+    color:#206b2b;
 }
 a:hover {
     text-decoration: underline;
+    background-color:#aaaaaa;
+}
 }
 h1 {
     font-size: 1.5em;
@@ -63,6 +65,6 @@ blockquote {
   background-color:#f0f0f0a6;
 
 }
-.MJXp-math {
+.MJXp-math .MJXp-mi .MJXp-mo{
     font-family: monospace;
 }
