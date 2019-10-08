@@ -66,7 +66,6 @@ blockquote {
 
 .MJXp-math {
     font-family: monospace;
-    font-size:1.3em;
 }
 .MJXp-mi {
     font-family: monospace;
@@ -76,29 +75,24 @@ blockquote {
 
 .MJXp-mo {
     font-family: monospace;
-    font-size:1.3em;
     
 }
 
 
 .MJXp-msubsup {
     font-family: monospace;
-    font-size: 1.1em;
 }
 
 
 .MJXp-msubsup {
     font-family: monospace;
-    font-size: 1.1em;
 }
 .MJXp-mrow {
   font-family: monospace;
-    font-size: 1.1em;
 }
 
 .MJXp-mrow .MJXp-script {
    font-family: monospace;
-   font-size: 0.1em;
    vertical-align: -0.2em;
 }
 
