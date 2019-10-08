@@ -6,11 +6,11 @@ date: 2019-10-07
 ---
 
 ### Notes in learning [Data Structures and Algorithms course](https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/dsacpp.3rd_edn.pdf)  
-#####1.Recurrence Relation**  
-**a.$$T(n) = 2*T(n/2) + O(1) ; base case T(1) = O(1)$$**
-<span>solution:</span>
+##### 1.Recurrence Relation
+**a.$$T(n) = 2*T(n/2) + O(1) ; base case T(1) = O(1)$$**    
+<span class="note">solution:</span>  
 > $$ T(n) = 2*T(n/2) + c_{1} $$   
-> <span>Build Geometric Sequences</span>
+> <span class="note">Build Geometric Sequences</span>
 > $$ T(n) + c_{1} = 2*(T(n/2) + c_{1}) = 2^{log(n)(T_{1} + c_{1})} $$
 > $$ T(n) = O(n) $$
 
