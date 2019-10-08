@@ -65,6 +65,9 @@ blockquote {
   background-color:#f0f0f0a6;
 
 }
-.MJXp-math .MJXp-mi .MJXp-mo{
-    font-family: monospace;
+.MJXp-math .MJXp-mi .MJXp-mo {
+    font-family: monospace!important;
+}
+span {
+    font-family: monospace!important; 
 }
