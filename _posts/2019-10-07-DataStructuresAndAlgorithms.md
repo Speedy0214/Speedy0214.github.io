@@ -6,7 +6,7 @@ date: 2019-10-07
 ---
 
 ## Notes in learning [Data Structures and Algorithms course](https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/dsacpp.3rd_edn.pdf)  
-##### 1. Recurrence Relation </h5>
+##### 1. Recurrence Relation 
 <span> a.$T(n) = 2*T(n/2) + O(1)$ ; base case $T(1) = O(1)$ <span>
 > $$ T(n) = 2*T(n/2) + c_{1} $$  
 > <span class="note">Build Geometric Sequences</span>   
