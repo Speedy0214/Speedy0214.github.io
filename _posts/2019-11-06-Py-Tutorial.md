@@ -5,11 +5,11 @@ categories: [PY-TUTORIAL]
 date: 2019-11-06
 ---
 
-Table of content  
+## Table of content  
 1. Interpreter(解释器)  
 
 
-1 Interpreter  
+### 1 Interpreter  
 1.1 Python interpreters  
 >Cpython  
 PyPy  
@@ -49,7 +49,7 @@ utf_16_le|UTF-16LE|all languages
 utf_7|U7, unicode-1-1-utf-7|all languages
 utf_8|U8, UTF, utf8, cp65001|all languages
 utf_8_sig| |all languages
-gb2312|chinese, csiso58gb231280,..|Simplified Chinese
+gb2312|chinese, csiso58gb231280..|Simplified Chinese
 gbk|936, cp936, ms936|Unified Chinese
 gb18030|gb18030-2000|Unified Chinese
 hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
