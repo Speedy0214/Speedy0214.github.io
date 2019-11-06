@@ -97,7 +97,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
         First line.
         Second line.
 ```
-> If you don’t want characters prefaced by to be interpreted as special characters, you can use raw strings by adding an r before the first quote:
+> If you don't want characters prefaced by to be interpreted as special characters, you can use raw strings by adding an r before the first quote:
 ```python
     111
 ```  
