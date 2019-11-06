@@ -224,7 +224,7 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
 ```
 
 3.6.5 Unpacking Arguments
->
+>unpack
 ```python
     >>> list(range(3, 6))            # normal call with separate arguments
     [3, 4, 5]
