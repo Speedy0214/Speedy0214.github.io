@@ -232,7 +232,8 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
     >>> args = [3, 6]
     >>> list(range(*args))            # call with arguments unpacked from a list
     [3, 4, 5]
-
+```
+```python
     >>> def parrot(voltage, state='a stiff', action='voom'):
     ...     print("-- This parrot wouldn't", action, end=' ')
     ...     print("if you put", voltage, "volts through it.", end=' ')
@@ -241,6 +242,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
     >>> d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
     >>> parrot(**d)
 ```  
+
 3.6.6 Lambda Expressions  
 3.6.7 Documentation Strings  
 3.6.8 Function Annotations
