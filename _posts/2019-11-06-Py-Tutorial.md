@@ -102,7 +102,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
     111
 ```  
 > span multiple lines
-```python
+```
     print("""\
     Usage: thingy [OPTIONS]
         -h                        Display this usage message
