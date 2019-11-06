@@ -104,8 +104,8 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
             ame
     >>> print(r'C:\some\name')  # note the r before the quote
         C:\some\name
-```
-> span multiple lines  
+```  
+> span multiple lines
 ```python
     print("""\
     Usage: thingy [OPTIONS]
