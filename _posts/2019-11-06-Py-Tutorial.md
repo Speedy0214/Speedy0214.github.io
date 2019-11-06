@@ -97,9 +97,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
         First line.
         Second line.
 ```
-
 > If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:  
-
 ```python
     >>> print('C:\some\name')  # here \n means newline!
         C:\some
@@ -110,9 +108,16 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 ```
 
 > span multiple lines  
-
 ```python
-    111
+    print("""\
+    Usage: thingy [OPTIONS]
+        -h                        Display this usage message
+        -H hostname               Hostname to connect to
+    """)
+
+    Usage: thingy [OPTIONS]
+        -h                        Display this usage message
+        -H hostname               Hostname to connect to  
 ```  
 
 > operator  
