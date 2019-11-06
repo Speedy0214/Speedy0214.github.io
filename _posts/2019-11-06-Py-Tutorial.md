@@ -37,7 +37,7 @@ IronPython
 >Standard Encodings  
 
 Codec | Aliases | Languages
--| -| -
+-:| -:| -:
 ascii | 646, us-ascii | English
 big5 | big5-tw, csbig5 |Traditional Chinese
 utf_32 | U32 utf32 |all languages
@@ -49,7 +49,7 @@ utf_16_le|UTF-16LE|all languages
 utf_7|U7, unicode-1-1-utf-7|all languages
 utf_8|U8, UTF, utf8, cp65001|all languages
 utf_8_sig| |all languages
-gb2312|chinese, csiso58gb231280, euc-cn, euccn, eucgb2312-cn, gb2312-1980, gb2312-80, iso-ir-58|Simplified Chinese
+gb2312|chinese, csiso58gb231280,..|Simplified Chinese
 gbk|936, cp936, ms936|Unified Chinese
 gb18030|gb18030-2000|Unified Chinese
 hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
