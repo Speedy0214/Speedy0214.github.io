@@ -186,9 +186,9 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
     [1]
     [1, 2]
     [1, 2, 3]
-    ```
-    If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
-    ```python
+```
+>If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
+```python
     def f(a, L=None):
         if L is None:
             L = []
