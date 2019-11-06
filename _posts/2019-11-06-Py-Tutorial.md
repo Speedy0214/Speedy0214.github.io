@@ -111,15 +111,15 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 
 >span multiple lines
 ```python
-print("""\
-Usage: thingy [OPTIONS]
-     -h                        Display this usage message
-     -H hostname               Hostname to connect to
-""")
+    print("""\
+    Usage: thingy [OPTIONS]
+        -h                        Display this usage message
+        -H hostname               Hostname to connect to
+    """)
 
-Usage: thingy [OPTIONS]
-     -h                        Display this usage message
-     -H hostname               Hostname to connect to
+    Usage: thingy [OPTIONS]
+        -h                        Display this usage message
+        -H hostname               Hostname to connect to
 ```
 > \+ and \* operator 
 ```python
@@ -128,34 +128,34 @@ Usage: thingy [OPTIONS]
 ```
 > automatically concatenated
 ```python
->>> 'Py' 'thon'
-    'Python'
->>> text = ('Put several strings within parentheses '
-...         'to have them joined together.')
->>> text
-    'Put several strings within parentheses to have them joined together.'
+    >>> 'Py' 'thon'
+        'Python'
+    >>> text = ('Put several strings within parentheses '
+    ...         'to have them joined together.')
+    >>> text
+        'Put several strings within parentheses to have them joined together.'
 ```
 > indexing and slicing
 ```python
->>> word = 'Python'
->>> word[0]  # character in position 0
-    'P'
->>> word[5]  # character in position 5
-    'n'
->>> word[-2]  # second-last character
-    'o'
->>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
-'Py'
->>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
-'tho'
->>> word[42]  # the word only has 6 characters
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-IndexError: string index out of range
->>> word[4:42]
-'on'
->>> word[42:]
-''
+    >>> word = 'Python'
+    >>> word[0]  # character in position 0
+        'P'
+    >>> word[5]  # character in position 5
+        'n'
+    >>> word[-2]  # second-last character
+        'o'
+    >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
+    'Py'
+    >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
+    'tho'
+    >>> word[42]  # the word only has 6 characters
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    IndexError: string index out of range
+    >>> word[4:42]
+    'on'
+    >>> word[42:]
+    ''
 ```
 > Python strings cannot be changed — they are immutable.  
 
@@ -180,25 +180,25 @@ IndexError: string index out of range
 
 ```python
 
-def f(a, L=[]):
-    L.append(a)
-    return L
+    def f(a, L=[]):
+        L.append(a)
+        return L
 
-print(f(1))
-print(f(2))
-print(f(3))
+    print(f(1))
+    print(f(2))
+    print(f(3))
 
-[1]
-[1, 2]
-[1, 2, 3]
-```
-If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
-```python
-def f(a, L=None):
-    if L is None:
-        L = []
-    L.append(a)
-    return L
+    [1]
+    [1, 2]
+    [1, 2, 3]
+    ```
+    If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
+    ```python
+    def f(a, L=None):
+        if L is None:
+            L = []
+        L.append(a)
+        return L
 ```
 
 3.6.2 Keyword Arguments  
