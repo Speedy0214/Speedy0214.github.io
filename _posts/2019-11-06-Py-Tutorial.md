@@ -240,8 +240,8 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
     >>> d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
     >>> parrot(**d)
 ```  
-3.6.6 Lambda Expressions
-3.6.7 Documentation Strings
+3.6.6 Lambda Expressions  
+3.6.7 Documentation Strings  
 3.6.8 Function Annotations
 ```python
 >>> def f(ham: str, eggs: str = 'eggs') -> str:
