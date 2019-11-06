@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "a python tutorial"
+title: "a python tutorial - 1"
 categories: [PY-TUTORIAL]
 date: 2019-11-06
 ---
@@ -9,7 +9,6 @@ date: 2019-11-06
 1. Interpreter(解释器)  
 2. Basic Data Types
 3. Control Flow
-4. 
 
 
 -------
@@ -253,6 +252,7 @@ Arguments: spam eggs
 'spam and eggs'
 ```
 ---
+
 
 
 ---
