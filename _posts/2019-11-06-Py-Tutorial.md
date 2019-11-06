@@ -119,8 +119,9 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 
     Usage: thingy [OPTIONS]
         -h                        Display this usage message
-        -H hostname               Hostname to connect to
+        -H hostname               Hostname to connect to  
 ```  
+
 > operator  
 ```python
     >>> 3 * 'un' + 'ium'
@@ -134,7 +135,8 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
     ...         'to have them joined together.')
     >>> text
         'Put several strings within parentheses to have them joined together.'
-```
+```  
+
 > indexing and slicing
 ```python
     >>> word = 'Python'
