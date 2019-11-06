@@ -109,7 +109,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 
 ```
 
->span multiple lines
+>span multiple lines  
 ```python
     print("""\
     Usage: thingy [OPTIONS]
