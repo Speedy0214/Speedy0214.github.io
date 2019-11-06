@@ -203,30 +203,29 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 >In a function call, keyword arguments must follow positional arguments.   
 >When a final formal parameter of the form **name is present, it receives a dictionary (see Mapping Types — dict) containing all keyword arguments except for those corresponding to a formal parameter. This may be combined with a formal parameter of the form *name (described in the next subsection) which receives a tuple containing the positional arguments beyond the formal parameter list. (*name must occur before **name.)  
 3.6.3  Special parameters  
+```python
+    def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+        -----------    ----------     ----------
+            |             |                  |
+            |        Positional or keyword   |
+            |                                - Keyword only
+            -- Positional only
 ```
-def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
-      -----------    ----------     ----------
-        |             |                  |
-        |        Positional or keyword   |
-        |                                - Keyword only
-         -- Positional only
-```
->where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.  
+> where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.  
 3.6.4 Arbitrary Argument Lists
 ```python
->>> def concat(*args, sep="/"):
-...     return sep.join(args)
-...
->>> concat("earth", "mars", "venus")
-    'earth/mars/venus'
->>> concat("earth", "mars", "venus", sep=".")
-    'earth.mars.venus'
+    >>> def concat(*args, sep="/"):
+    ...     return sep.join(args)
+    ...
+    >>> concat("earth", "mars", "venus")
+        'earth/mars/venus'
+    >>> concat("earth", "mars", "venus", sep=".")
+        'earth.mars.venus'
 ```
 
 3.6.5 Unpacking Arguments
->unpack
-```python
-```
+> unpack
+
 ```python
 >>> list(range(3, 6))            # normal call with separate arguments
 [3, 4, 5]
