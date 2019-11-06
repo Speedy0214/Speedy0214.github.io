@@ -113,9 +113,11 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
         -H hostname               Hostname to connect to
     """)  
 ```  
+```
     Usage: thingy [OPTIONS]
         -h                        Display this usage message
         -H hostname               Hostname to connect to
+```
 > operator  
 ```python
     >>> 3 * 'un' + 'ium'
