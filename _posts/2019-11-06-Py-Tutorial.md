@@ -70,39 +70,9 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
   Complex numbers  
 
 2.2 Strings 
-> interactive mode  
-```python
-    >>> 'spam eggs'  # single quotes
-        'spam eggs'
-    >>> 'doesn\'t'  # use \' to escape the single  quote...
-        "doesn't"
-    >>> "doesn't"  # ...or use double quotes instead "doesn't"
-    >>> '"Yes," they said.'
-        '"Yes," they said.'
-    >>> "\"Yes,\" they said."
-        '"Yes," they said.'
-    >>> '"Isn\'t," they said.'
-        '"Isn\'t," they said.'
-```
-> use print()
-```python
-    >>> '"Isn\'t," they said.'
-        '"Isn\'t," they said.'
-    >>> print('"Isn\'t," they said.')
-        "Isn't," they said.
-    >>> s = 'First line.\nSecond line.'  # \n means newline
-    >>> s  # without print(), \n is included in the output
-        'First line.\nSecond line.'
-    >>> print(s)  # with print(), \n produces a new line
-        First line.
-        Second line.
-```
-> you can use raw strings by adding an r before the first quote:
-```python
-    111
-```  
+
 > span multiple lines
-``
+```
     
         Usage: thingy [OPTIONS]
             -h                        Display this usage message
