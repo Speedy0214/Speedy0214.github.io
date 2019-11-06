@@ -109,17 +109,10 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 
 ```
 
->span multiple lines  
-```python
-    print("""\
-    Usage: thingy [OPTIONS]
-        -h                        Display this usage message
-        -H hostname               Hostname to connect to
-    """)
+> span multiple lines  
 
-    Usage: thingy [OPTIONS]
-        -h                        Display this usage message
-        -H hostname               Hostname to connect to  
+```python
+    111
 ```  
 
 > operator  
