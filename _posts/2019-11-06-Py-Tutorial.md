@@ -121,7 +121,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
         -h                        Display this usage message
         -H hostname               Hostname to connect to
 ```  
-> + and * operator 
+> operator  
 ```python
     >>> 3 * 'un' + 'ium'
     'unununium'
