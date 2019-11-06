@@ -7,31 +7,35 @@ date: 2019-11-06
 
 Table of content  
 1. Interpreter(解释器)  
-Cpython  
+
+
+1 Interpreter  
+1.1 Python interpreters  
+>Cpython  
 PyPy  
 Jython  
 IronPython
 
-1 Interpreter  
-1.1 Python interpreters
+1.2 Argument Passing and Interactive Mode  
 
-1.2 Argument Passing and Interactive Mode
 ```python
-$ python3 hello.py arg0 arg1 arg 2 
-  script name and add args are turned into a list of strings and assigned to sys.argv
-  sys.argv = ["hello", arg0, arg1, arg2]
+    $ python3 hello.py arg0 arg1 arg 2 
+      script name and add args are turned into a list of strings and assigned to sys.argv
+      sys.argv = ["hello", arg0, arg1, arg2]
 ```
 ```python
-$ python -m package
-  note: interpreter execute __main__.py module
-$ python -c "print(1)
-  print(2)"
+    $ python -m package
+      note: interpreter execute __main__.py module
+    $ python -c "print(1)
+      print(2)"
 ```
 1.2 Source Code Encoding
 ```
-# -*- coding: encoding -*-
+    # -*- coding: encoding -*-
 ```
-Standard Encodings
+
+>Standard Encodings  
+
 Codec | Aliases | Languages
 -| -| -
 ascii | 646, us-ascii | English
