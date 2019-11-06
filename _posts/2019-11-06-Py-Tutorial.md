@@ -125,7 +125,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 ```python
     >>> 3 * 'un' + 'ium'
     'unununium'
-```
+```  
 > automatically concatenated
 ```python
     >>> 'Py' 'thon'
