@@ -99,11 +99,7 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 ```
 > If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:
 ```python
-    >>> print('C:\some\name')  # here \n means newline!
-        C:\some
-            ame
-    >>> print(r'C:\some\name')  # note the r before the quote
-        C:\some\name
+    
 ```  
 > span multiple lines
 ```python
