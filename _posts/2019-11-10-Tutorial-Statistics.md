@@ -23,8 +23,12 @@ graph LR
 graph LR
     drawConclusions --by--> conductExperiments --need--> sampleSpace
 ```
-        Sample space : the set s of all possible outcomes of a particular experiment.
+>Sample space : the set s of all possible outcomes of a particular experiment.
 
+    Cpython  
+    PyPy  
+    Jython  
+    IronPython
 
 1.2 Argument Passing and Interactive Mode  
 
@@ -44,7 +48,7 @@ graph LR
     # -*- coding: encoding -*-
 ```
 
-        Standard Encodings  
+>Standard Encodings  
 
 Codec | Aliases | Languages
 -:| -:| -:
@@ -69,15 +73,14 @@ hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
 
 ### 2 Basic Data Types  
 2.1 Numbers  
-    int  
-    float  
-    Decimal  
-    Fraction  
-    Complex numbers  
+> int  
+  float  
+  Decimal  
+  Fraction  
+  Complex numbers  
 
 2.2 Strings 
-> 
-    interactive mode  
+> interactive mode  
 ```python
     >>> 'spam eggs'  # single quotes
         'spam eggs'
