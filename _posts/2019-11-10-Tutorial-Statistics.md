@@ -22,63 +22,33 @@ graph LR
 ```mermaid
 graph LR
     drawConclusions --by--> conductExperiments --need--> sampleSpace
+```  
+> **Sample space** : the set s of all possible outcomes of a particular experiment, eg. coin $S = \{H, T\}$
+>Once the sample space has been defined, then consider collections of possible outcomes of an experiment.
+> **Event** : An event is any collection of possible outcomes of an experiment, that is any subset of S. eg. event $ A \subseteq S $
+```mermaid
+graph LR
+    sampleSpace --collection--> event
+``` 
+>!important. event A occurs if the outcome of the experiment  is in the set A.
+
+> **Disjoint(mutually exclusive)** : two event A and B are disjoin 
+> **Partition** : If $A_1,A_2, A_3, \cdots $ are pairwise disjoint and $ {\bigcup}_{i=1}^{\infty}A_i = S$, then the collection $A_1,A_2, A_3, \cdots $ forms a partition of $S$.  
+
+1.2 Basic of probability theory
+```mermaid
+graph LR
+    conductExperiment --> outcomes
 ```
->Sample space : the set s of all possible outcomes of a particular experiment.
+> eg. a, a, b, c ,b ,a ,c ,a
+> **'Frequency of occurrence'** can be thought as a probability.
+>>Two way to make a definition
+>> 1.define in terms of $\cdots$
+>> 2.define term , which satisfy $\cdots$
 
-    Cpython  
-    PyPy  
-    Jython  
-    IronPython
-
-1.2 Argument Passing and Interactive Mode  
-
-```python
-    $ python3 hello.py arg0 arg1 arg 2 
-      script name and add args are turned into a list of strings and assigned to sys.argv
-      sys.argv = ["hello", arg0, arg1, arg2]
-```
-```python
-    $ python -m package
-      note: interpreter execute __main__.py module
-    $ python -c "print(1)
-      print(2)"
-```
-1.2 Source Code Encoding
-```
-    # -*- coding: encoding -*-
-```
-
->Standard Encodings  
-
-Codec | Aliases | Languages
--:| -:| -:
-ascii | 646, us-ascii | English
-big5 | big5-tw, csbig5 |Traditional Chinese
-utf_32 | U32 utf32 |all languages
-utf_32_be | UTF-32BE |all languages
-utf_32_le| UTF-32LE|all languages
-utf_16|U16, utf16|all languages
-utf_16_be|UTF-16BE|all languages
-utf_16_le|UTF-16LE|all languages
-utf_7|U7, unicode-1-1-utf-7|all languages
-utf_8|U8, UTF, utf8, cp65001|all languages
-utf_8_sig| |all languages
-gb2312|chinese, csiso58gb231280..|Simplified Chinese
-gbk|936, cp936, ms936|Unified Chinese
-gb18030|gb18030-2000|Unified Chinese
-hz|hzgb, hz-gb, hz-gb-2312|Simplified Chinese
-
-
-------------
-
-### 2 Basic Data Types  
-2.1 Numbers  
-> int  
-  float  
-  Decimal  
-  Fraction  
-  Complex numbers  
-
+1.2.1 Axiomatic foundation
+> For each event A in sample space S, associating with A a number between zero and one that will be called the probability of A, denoted by $P(A)$
+>> **$\sigma$ algebra** (测度论) : a collection of subset of S is called a *$\sigma$ algebra*, denoted by $\beta$
 2.2 Strings 
 > interactive mode  
 ```python
