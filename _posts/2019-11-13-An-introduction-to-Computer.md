@@ -19,4 +19,6 @@ date: 2019-11-11
 ![transistor_symbol](/assets/computer/transistor_symbol.png)
 ![transistor](/assets/computer/transistor.png)
 ---
-<h2>Reference</h2>
+<h2>Reference</h2>    
+
+[Wikipedia](https://www.wikipedia.org)
