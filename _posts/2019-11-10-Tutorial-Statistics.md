@@ -49,25 +49,25 @@ graph LR
 
 1.2.1 Axiomatic foundation
 > For each event A in sample space S, associating with A a number between zero and one that will be called the probability of A, denoted by $P(A)$
->> **$\sigma$ algebra** (测度论) : a collection of subset of S is called a *$\sigma$ algebra*, denoted by $\Beta$, which satisfies:
->>> a. $ \empty \in \Beta$
-b. If $ A \in \Beta $ then $ A^c \in \Beta $
-c. If $A_1,A_2,\cdots \in \Beta$, then ${\bigcup}_{i=1}^{\infty} A_i \in \Beta$  
+>> **$\sigma$ algebra** (测度论) : a collection of subset of S is called a *$\sigma$ algebra*, denoted by $\beta$, which satisfies:
+>>> a. $ \empty \in \beta$
+b. If $ A \in \beta $ then $ A^c \in \beta $
+c. If $A_1,A_2,\cdots \in \beta$, then ${\bigcup}_{i=1}^{\infty} A_i \in \beta$  
 
->**Probability function** : given a sample space S and an associate sigma algebra $\Beta$ , a probability function is a function P with domain $\Beta$ that satisfies:
->> 1. $P(A) \geq 0 $ for all $ A \in \Beta $
+>**Probability function** : given a sample space S and an associate sigma algebra $\beta$ , a probability function is a function P with domain $\beta$ that satisfies:
+>> 1. $P(A) \geq 0 $ for all $ A \in \beta $
 >> 2. $P(S) = 1$
->> 3. If $A_1,A_2, \cdots \in \Beta$ are pairwise disjoint, then $P({\bigcup}_{i=1}^\infty A_i) = \sum_{i=1}^\infty P(A_i)$  
+>> 3. If $A_1,A_2, \cdots \in \beta$ are pairwise disjoint, then $P({\bigcup}_{i=1}^\infty A_i) = \sum_{i=1}^\infty P(A_i)$  
 
->**Theorem** : let $S = \{s_{\tiny{1}},\cdots,s_n\}$, a finite set. Let $\Beta$ be any sigma algebra of subset of $S$. Let $P_1, \cdots, P_n$ be nonnegative numbers that sum to 1 ($\sum_{i=1}^n P_i = 1$). For any $A \in \Beta$, define $P(A)$:
+>**Theorem** : let $S = \{s_{\tiny{1}},\cdots,s_n\}$, a finite set. Let $\beta$ be any sigma algebra of subset of $S$. Let $P_1, \cdots, P_n$ be nonnegative numbers that sum to 1 ($\sum_{i=1}^n P_i = 1$). For any $A \in \beta$, define $P(A)$:
 $$P(A) = \sum\limits_{\{i: s_i \in A \} }s_i $$
 
->**Theorem** : if $P$ is a probability function and $A$ is any set in $\Beta$, then:
->>a. $P(\empty) = 0$
+>**Theorem** : if $P$ is a probability function and $A$ is any set in $\beta$, then:
+>>a. $P(\emptyset) = 0$
 b. $P(A) \leq 1$
 c. $P(A^c) = 1 - P(A)$  
 
->**Theorem** : if $P$ is a probability function , $A, B$ is any set in $\Beta$, then:
+>**Theorem** : if $P$ is a probability function , $A, B$ is any set in $\beta$, then:
 >>a. $P(B \cap A^c) = P(B) - P(A \cap B)$
 >>b. $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 >>c. If $A \subseteq B$ then $P(A) \leq P(B)$
