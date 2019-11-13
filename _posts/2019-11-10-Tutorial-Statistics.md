@@ -32,7 +32,8 @@ graph LR
 ``` 
 >!important. event A occurs if the outcome of the experiment  is in the set A.
 
-> **Disjoint(mutually exclusive)** : two event A and B are disjoin, if ???
+> **Disjoint(mutually exclusive)** : two event A and B are disjoin, if ???  
+
 > **Partition** : If $A_1,A_2, A_3, \cdots $ are pairwise disjoint and $ {\bigcup}_{i=1}^{\infty}A_i = S$, then the collection $A_1,A_2, A_3, \cdots $ forms a partition of $S$.  
 
 1.2 Basic of probability theory
