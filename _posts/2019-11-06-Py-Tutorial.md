@@ -6,9 +6,9 @@ date: 2019-11-06
 ---
 
 ### Table of content  
-1. Interpreter(解释器)  
-2. Basic Data Types
-3. Control Flow
+>1. Interpreter(解释器)  
+>2. Basic Data Types
+>3. Control Flow
 
 
 -------

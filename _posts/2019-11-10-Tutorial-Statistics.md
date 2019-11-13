@@ -6,9 +6,9 @@ date: 2019-11-10
 ---
 
 ### Table of content  
-1. Probability Theory  
-2. 
-3. Control Flow
+>1. Probability Theory  
+>2. Basic of probability theory
+>3. Conditional probability and independence
 
 -------
 
@@ -32,7 +32,7 @@ graph LR
 ``` 
 >!important. event A occurs if the outcome of the experiment  is in the set A.
 
-> **Disjoint(mutually exclusive)** : two event A and B are disjoin 
+> **Disjoint(mutually exclusive)** : two event A and B are disjoin, if ???
 > **Partition** : If $A_1,A_2, A_3, \cdots $ are pairwise disjoint and $ {\bigcup}_{i=1}^{\infty}A_i = S$, then the collection $A_1,A_2, A_3, \cdots $ forms a partition of $S$.  
 
 1.2 Basic of probability theory
@@ -40,208 +40,80 @@ graph LR
 graph LR
     conductExperiment --> outcomes
 ```
-> eg. a, a, b, c ,b ,a ,c ,a
+> eg. a, a, b, c ,b ,a ,c ,a  
 > **'Frequency of occurrence'** can be thought as a probability.
->>Two way to make a definition
->> 1.define in terms of $\cdots$
->> 2.define term , which satisfy $\cdots$
+>>Two way to make a definition       
+>> 1.define in terms of $\cdots$     
+>> 2.define term , which satisfy $\cdots$   
 
 1.2.1 Axiomatic foundation
 > For each event A in sample space S, associating with A a number between zero and one that will be called the probability of A, denoted by $P(A)$
->> **$\sigma$ algebra** (测度论) : a collection of subset of S is called a *$\sigma$ algebra*, denoted by $\beta$
-2.2 Strings 
-> interactive mode  
-```python
-    >>> 'spam eggs'  # single quotes
-        'spam eggs'
-    >>> 'doesn\'t'  # use \' to escape the single  quote...
-        "doesn't"
-    >>> "doesn't"  # ...or use double quotes instead "doesn't"
-    >>> '"Yes," they said.'
-        '"Yes," they said.'
-    >>> "\"Yes,\" they said."
-        '"Yes," they said.'
-    >>> '"Isn\'t," they said.'
-        '"Isn\'t," they said.'
+>> **$\sigma$ algebra** (测度论) : a collection of subset of S is called a *$\sigma$ algebra*, denoted by $\Beta$, which satisfies:
+>>> a. $ \empty \in \Beta$
+b. If $ A \in \Beta $ then $ A^c \in \Beta $
+c. If $A_1,A_2,\cdots \in \Beta$, then ${\bigcup}_{i=1}^{\infty} A_i \in \Beta$  
+
+>**Probability function** : given a sample space S and an associate sigma algebra $\Beta$ , a probability function is a function P with domain $\Beta$ that satisfies:
+>> 1. $P(A) \geq 0 $ for all $ A \in \Beta $
+>> 2. $P(S) = 1$
+>> 3. If $A_1,A_2, \cdots \in \Beta$ are pairwise disjoint, then $P({\bigcup}_{i=1}^\infty A_i) = \sum_{i=1}^\infty P(A_i)$  
+
+>**Theorem** : let $S = \{s_{\tiny{1}},\cdots,s_n\}$, a finite set. Let $\Beta$ be any sigma algebra of subset of $S$. Let $P_1, \cdots, P_n$ be nonnegative numbers that sum to 1 ($\sum_{i=1}^n P_i = 1$). For any $A \in \Beta$, define $P(A)$:
+$$P(A) = \sum\limits_{\{i: s_i \in A \} }s_i $$
+
+>**Theorem** : if $P$ is a probability function and $A$ is any set in $\Beta$, then:
+>>a. $P(\empty) = 0$
+b. $P(A) \leq 1$
+c. $P(A^c) = 1 - P(A)$  
+
+>**Theorem** : if $P$ is a probability function , $A, B$ is any set in $\Beta$, then:
+>>a. $P(B \cap A^c) = P(B) - P(A \cap B)$
+>>b. $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+>>c. If $A \subseteq B$ then $P(A) \leq P(B)$
+>>> tips : n choose r :${n \choose r} = \frac{n!}{r!(n-r)!}$ 
+
+1.3 Conditional probability and independence 
+>**Conditional probability** : If $A$ and $B$ are event in $S$ and $P(B)>0$. Then, the conditional probability of $A$ given $B$, writen $P(A|B)$, is:
+$$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
+>**Bayes Rule**:
+$$P(A|B) = P(B|A)\frac{P(A)}{P(B)}$$
+more general form with partition of the sample space
+>**Theorem**: let $A_1,A_2,\cdots$ be a partition of sample space, and let B be any set. Then for each $i= 1,2,\cdots$
+$$P(A_i|B) = \frac{P(B|A_i)}{P(A_i)\sum\limits_{j=1}^\infty P(B|A_j)P(A_j)}$$
+
+>**Independent**: two events $A, B$ are statistically independent if:
+$$P(A \cap B) = P(A)P(B)$$  
+
+1.4 Random variables
+> *opinion poll*
+>> *50 people whether agree or disagree*
+>> *sample space size : $2^{50}$*
+
+```mermaid
+graph LR
+    huge --reduce sample space size--> reasonable;
 ```
-> use print()
-```python
-    >>> '"Isn\'t," they said.'
-        '"Isn\'t," they said.'
-    >>> print('"Isn\'t," they said.')
-        "Isn't," they said.
-    >>> s = 'First line.\nSecond line.'  # \n means newline
-    >>> s  # without print(), \n is included in the output
-        'First line.\nSecond line.'
-    >>> print(s)  # with print(), \n produces a new line
-        First line.
-        Second line.
+>**essence, essential**
+>> only  quantity of interest is the number of agree
+>> so define $X$: the number of ones records
+```mermaid
+graph LR
+    AgreeOrNot --> numberOfAgree;
 ```
-> If you don't want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:
-```python
-    >>> print('C:\some\name')  # here \n means newline!
-        C:\some
-            ame
-    >>> print(r'C:\some\name')  # note the r before the quote
-        C:\some\name
-```
-> span multiple lines
-```python
-    print("""\
-    Usage: thingy [OPTIONS]
-        -h                        Display this usage message
-        -H hostname               Hostname to connect to
-    """)  
-```  
-```
-    Usage: thingy [OPTIONS]
-        -h                        Display this usage message
-        -H hostname               Hostname to connect to
-```
-> operator  
-```python
-    >>> 3 * 'un' + 'ium'
-    'unununium'
-```  
-> automatically concatenated
-```python
-    >>> 'Py' 'thon'
-        'Python'
-    >>> text = ('Put several strings within parentheses '
-    ...         'to have them joined together.')
-    >>> text
-        'Put several strings within parentheses to have them joined together.'
-```  
+>> sample space of $X$ is the set of integers $\{0,1,2,\cdots, 50\}$
 
-> indexing and slicing
-```python
-    >>> word = 'Python'
-    >>> word[0]  # character in position 0
-        'P'
-    >>> word[5]  # character in position 5
-        'n'
-    >>> word[-2]  # second-last character
-        'o'
-    >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
-    'Py'
-    >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
-    'tho'
-    >>> word[42]  # the word only has 6 characters
-    Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-    IndexError: string index out of range
-    >>> word[4:42]
-    'on'
-    >>> word[42:]
-    ''
-```
-> Python strings cannot be changed — they are immutable.  
-
-2.3 Lists
->compound data types  
-> operations \+, \*  
-> mutable type  
-> append vs extend
-
-2.4 Dicts 
-
-
-### 3 Control Flow  
-3.1 while Statements  
-3.2 if Statements  
-3.3 for Statements  
-3.4 break and continue Statements  
-3.5 pass Statements  
-3.6 Defining Functions  
-3.6.1 Default Argument Values  
->**Important warning:** The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes. For example, the following function accumulates the arguments passed to it on subsequent calls:
-
-```python
-
-    def f(a, L=[]):
-        L.append(a)
-        return L
-
-    print(f(1))
-    print(f(2))
-    print(f(3))
-
-    [1]
-    [1, 2]
-    [1, 2, 3]
-```
->If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
-```python
-    def f(a, L=None):
-        if L is None:
-            L = []
-        L.append(a)
-        return L
+> **Random variable** : a random variable is a function from a sample space $S$ into the real number.
+>> so define $X$: the number of ones records
+```mermaid
+graph LR
+    sampleSpace --function--> realNumber;
 ```
 
-3.6.2 Keyword Arguments  
->In a function call, keyword arguments must follow positional arguments.   
->When a final formal parameter of the form **name is present, it receives a dictionary (see Mapping Types — dict) containing all keyword arguments except for those corresponding to a formal parameter. This may be combined with a formal parameter of the form *name (described in the next subsection) which receives a tuple containing the positional arguments beyond the formal parameter list. (*name must occur before **name.)  
-3.6.3  Special parameters  
-```python
-    def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
-        -----------    ----------     ----------
-            |             |                  |
-            |        Positional or keyword   |
-            |                                - Keyword only
-            -- Positional only
-```
-> where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.  
-3.6.4 Arbitrary Argument Lists
-```python
-    >>> def concat(*args, sep="/"):
-    ...     return sep.join(args)
-    ...
-    >>> concat("earth", "mars", "venus")
-        'earth/mars/venus'
-    >>> concat("earth", "mars", "venus", sep=".")
-        'earth.mars.venus'
-```
-
-3.6.5 Unpacking Arguments  
-> unpack
-```python
-    >>> list(range(3, 6))            # normal call with separate arguments
-    [3, 4, 5]
-    >>> args = [3, 6]
-    >>> list(range(*args))            # call with arguments unpacked from a list
-    [3, 4, 5]
-```
-```python
-    >>> def parrot(voltage, state='a stiff', action='voom'):
-    ...     print("-- This parrot wouldn't", action, end=' ')
-    ...     print("if you put", voltage, "volts through it.", end=' ')
-    ...     print("E's", state, "!")
-    ...
-    >>> d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
-    >>> parrot(**d)
-```  
-
-3.6.6 Lambda Expressions  
-3.6.7 Documentation Strings  
-3.6.8 Function Annotations
-> 
-```python
-    >>> def f(ham: str, eggs: str = 'eggs') -> str:
-    ...     print("Annotations:", f.__annotations__)
-    ...     print("Arguments:", ham, eggs)
-    ...     return ham + ' and ' + eggs
-    ...
-    >>> f('spam')
-    Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}
-    Arguments: spam eggs
-    'spam and eggs'
-```
----
-
-
+1.5 Distribution Function
+> **Cumulative distribution function(cdf)**: with every random variable $X$, associate a function called the cumulative distribution function of X. Denoted by $F_X(x) = P_X(X\leq x)$, for all $x$.
+>> *Cdf is right continuous*
 
 ---
 <h2>Reference</h2>
 
-[Python Interpreter]( https://docs.python.org/3/tutorial )
+[Casella, G., Berger, R. L. (2002). Statistical Inference]
