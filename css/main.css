@@ -62,8 +62,8 @@ ul.posts li {
 }
 
 img {
-  max-width:  600px;
-  max-heigth:  600px;
+  max-width:  300px;
+  max-height:  300px;
   display: block;
 }
 

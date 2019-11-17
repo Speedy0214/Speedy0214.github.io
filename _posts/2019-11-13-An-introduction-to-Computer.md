@@ -82,7 +82,8 @@ $$
 \hline
  & \cdots S_{i+1}S_iS_{i-1}\cdots
 \end{array}  \right]
-$$
+$$  
+
 >> INPUT : $A_i, B_i, C_{i-1}$
 >> OUTPUT : $S_i, C_i$
 ![add](/assets/computer/add_0.png)
@@ -91,7 +92,7 @@ $$
 ![add](/assets/computer/add__.png)
 
 > Memory
-![ROM](/assets/computer/ROM.png)
+![ROM](/assets/computer/ROM.png 200x300)
 <h2>Reference</h2>    
 
 [Wikipedia](https://www.wikipedia.org)
