@@ -92,7 +92,7 @@ $$
 ![add](/assets/computer/add__.png)
 
 > Memory
-![ROM](/assets/computer/ROM.png 200x300)
+![ROM](/assets/computer/ROM.png)
 <h2>Reference</h2>    
 
 [Wikipedia](https://www.wikipedia.org)
