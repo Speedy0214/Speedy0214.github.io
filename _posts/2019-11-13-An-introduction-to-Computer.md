@@ -91,7 +91,7 @@ $$
 ![add](/assets/computer/add__.png)
 
 > Memory
-![ROM](/assets/computer/ROM__.png)
+![ROM](/assets/computer/ROM.png)
 <h2>Reference</h2>    
 
 [Wikipedia](https://www.wikipedia.org)
