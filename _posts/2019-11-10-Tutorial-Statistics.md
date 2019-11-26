@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "a tutorial to statistics"
+title: "Chapter1 - Probability Theory"
 categories: [STATISTICS-TUTORIAL]
 date: 2019-11-10
 ---
 
 ### Table of content  
->1. Probability Theory  
+>1. Set Theory
 >2. Basic of probability theory
 >3. Conditional probability and independence
+>4. Random variables
+>5. Distribution Function
 
 -------
-
-### 1 Probability Theory    
+   
 1.1 Set Theory  
 ```mermaid
 graph LR
